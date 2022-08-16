@@ -26,7 +26,7 @@ class version_buildnumber {
   
 }
 
-" > lib/version_buildnumber.dart
+
 echo "$VER"
 
 exit 0
