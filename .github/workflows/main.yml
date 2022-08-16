@@ -57,17 +57,18 @@ jobs:
              ((BLD++))
              echo $BLD > .build_seq
 echo "Ver: $VER ($BLD)" > .current_version
+echo
 
-echo "
+#             echo "
 
- class version_buildnumber {
-  static const String name = '$VER';q
-  static const int build = $BLD;
+#  class version_buildnumber {
+#   static const String name = '$VER';q
+#   static const int build = $BLD;
   
-}
+# }
 
-" > lib/version_buildnumber.dart
-echo "$VER"
+# " > lib/version_buildnumber.dart
+# echo "$VER"
 
-exit 0
+# exit 0
          
