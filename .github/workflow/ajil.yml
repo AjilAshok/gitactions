@@ -1,0 +1,23 @@
+name: Android, Web & iOS
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
+      -name: run a online script
+       run: 
+         echo 1. what is this directory?
+         ls -a
+         echo 2.Is java installed
+         java -version
+         
+         
+         
