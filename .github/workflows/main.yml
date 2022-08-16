@@ -38,3 +38,5 @@ jobs:
         run: |
            echo java -version
            echo
+           echo 3.Is git version?
+           git --version
