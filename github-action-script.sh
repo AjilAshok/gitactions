@@ -37,3 +37,18 @@ echo 1.what is ur name
 
 echo $(date)
 echo $(date +'%d/%m/%Y/%r')
+steps:
+  - name: Get current time
+    uses: josStorer/get-current-time@v2.0.1
+    id: current-time
+    with:
+      format: YYYYMMDD-HH
+      utcOffset: "+08:00"
+  - name: Use current time
+    env:
+      TIME: "${{ steps.current-time.outputs.time }}"
+      R_TIME: "${{ steps.current-time.outputs.readableTime }}"
+      F_TIME: "${{ steps.current-time.outputs.formattedTime }}"
+      YEAR: "${{ steps.current-time.outputs.year }}"
+      DAY: "${{ steps.current-time.outputs.day }}"
+    run: echo $TIME $R_TIME $F_TIME $YEAR $DAY
