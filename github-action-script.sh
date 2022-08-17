@@ -33,6 +33,7 @@
 
 java --version
 echo 1.what is ur name
+echo 2.heihoroiwe
 
 
 echo $(date)
