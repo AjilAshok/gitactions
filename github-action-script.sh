@@ -33,7 +33,6 @@
 
 java --version
 echo 1.what is ur name
-- name: Set Timezone
-  uses: szenius/set-timezone@v1.0
 
-echo $(date).tolocal
+
+echo $(date)
