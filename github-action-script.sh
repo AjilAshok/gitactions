@@ -36,3 +36,4 @@ echo 1.what is ur name
 
 
 echo $(date)
+echo $(date +'%d/%m/%Y')
